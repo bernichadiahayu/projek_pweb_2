@@ -7,7 +7,7 @@ session_start();
         }
     }
     if (isset($_SESSION["login"])){
-        header("Location: dashboard.php");
+        header("Location: index2.php");
         exit;
     }
 require 'functions.php';
@@ -34,7 +34,7 @@ require 'functions.php';
                     setcookie('login','true',time()+60);
                 }
 
-            header("Location:dashboard.php");
+            header("Location:index2.php");
             exit;
             }
         }
